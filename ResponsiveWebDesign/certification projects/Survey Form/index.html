@@ -1,0 +1,73 @@
+<!-- example:https://survey-form.freecodecamp.rocks/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <div>
+      <label id="name-label">Name   <input type="text" id="name" placeholder="Enter your name" required></label>
+    </div>
+    <div>
+      <label id="email-label">Email  <input type="email" id="email" placeholder="Enter your email" required></label>
+    </div>
+    <div>
+      <label id="number-label">Age <input type="number" id="number" min=18 max=100 placeholder="Enter your age" required></label>
+    </div>
+    <div>
+      <label>Gender 
+      <select id="dropdown">
+        <option>(Select one)</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      </label>
+    </div>
+    <div>
+      <p>How would you rate your experience?</p>
+      <label><input type="radio" name="rating"  value="worst">0</label>
+      <label><input type="radio" name="rating" value="bad">1</label>
+      <label><input type="radio" name="rating" value="neutral">2</label>
+      <label><input type="radio" name="rating" value="good">3</label>
+      <label><input type="radio" name="rating" value="very good">4</label>
+      <label><input type="radio" name="rating" value="excellent">5</label>
+    </div>
+    <div>
+      <p>What would you like to see improved?(Check all that apply)
+      </p>
+    </div>
+    <div class="improve">
+      <div>
+        <label><input value="front-end" type="checkbox">Front-end</label>
+      </div>
+      <div>
+        <label><input value="back-end" type="checkbox">Back-end</label>
+      </div>
+      <div>
+        <label><input  value="blog" type="checkbox" >Blog</label>
+      </div>
+      <div>
+        <label><input  value="forum" type="checkbox" >Forum</label>
+      </div>
+      <div>
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div>
+        <input type="submit" id="submit" value="Submit" />
+      </div>
+  </form>
+</body>
+
+</html>
